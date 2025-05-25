@@ -44,11 +44,6 @@ input[type="text"]{
 .todos-container{
     padding: 20px;
 }
-.todos-container{
-    padding: 20px;
-    max-height: 400px;
-    overflow-y: auto;
-}
 .input-section button{
     padding: 12px 20px;
     border-radius: 6px;
@@ -59,11 +54,28 @@ input[type="text"]{
     font-weight: bold;
     cursor: pointer;
 }
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    max-width: 800px; 
+    width: 100%; 
+}
+
 .todo-item{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255,255, 0.9) ;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) ;
+    padding: 15px 20px;
+    transition: transform 0.2s ease;
+}
+.todo-item:hover {
+    transform: scale(1.02);
 }
 .todo-content{
     display: flex;
